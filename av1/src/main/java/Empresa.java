@@ -14,12 +14,17 @@ public class Empresa {
     }
     void adicionarFuncionario(int matricula){
         for (int i = 0; i < funcionarios.length; i++) {
-            if(funcionarios[i] == null){
+           if(funcionarios[i] == null){
                 funcionarios[i] = new Funcionario();
                 funcionarios[i].matricula = matricula;
+                System.out.println("Nome: ");
                 funcionarios[i].pessoa.nome = entrada.nextLine();
+                System.out.println("Cpf: ");
                 funcionarios[i].pessoa.cpf = entrada.nextLine();
+                System.out.println("Idade: ");
                 funcionarios[i].pessoa.idade = entrada.nextInt();
+
+                i = funcionarios.length;
             }
         }
     }
