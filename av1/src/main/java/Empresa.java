@@ -12,10 +12,11 @@ public class Empresa {
         System.out.println("Cnpj: " + cnpj);
         System.out.println("Endereço: " + endereco);
     }
-    void adicionarFuncionario(funcionari){
+    void adicionarFuncionario(int matricula){
         for (int i = 0; i < funcionarios.length; i++) {
             if(funcionarios[i] == null){
                 funcionarios[i] = new Funcionario();
+                funcionarios[i].matricula = matricula;
                 funcionarios[i].pessoa.nome = entrada.nextLine();
                 funcionarios[i].pessoa.cpf = entrada.nextLine();
                 funcionarios[i].pessoa.idade = entrada.nextInt();
