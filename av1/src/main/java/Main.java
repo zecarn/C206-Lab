@@ -21,6 +21,7 @@ public class Main {
         }
         if(escolha == 2){
             System.out.println("Adicionando um funcionário: ");
+            System.out.println("Insira a matrícula: ");
             funcionario = entrada.nextInt();
             empresa.adicionarFuncionario(funcionario);
         }
